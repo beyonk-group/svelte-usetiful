@@ -22,6 +22,6 @@ jobs:
           run_install: true
 
       - run: pnpm build
-      - run: pnpm publish
+      - run: pnpm publish --tag next
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

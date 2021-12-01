@@ -1,6 +1,6 @@
 {
   "name": "@beyonk/svelte-usetiful",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "src/lib/Usetiful.svelte",
   "svelte": "src/lib/Usetiful.svelte",
   "scripts": {

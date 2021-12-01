@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://beyonk.com">
-    <img width="186" height="90" src="https://user-images.githubusercontent.com/218949/144224348-1b3a20d5-d68e-4a7a-b6ac-6946f19f4a86.png" />
+    <img src="https://user-images.githubusercontent.com/218949/144224348-1b3a20d5-d68e-4a7a-b6ac-6946f19f4a86.png" />
   </a>
 </p>
 

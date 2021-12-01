@@ -27,7 +27,7 @@ pnpm i --save-dev @beyonk/svelte-usetiful
 <ProductTour token="my-usetiful-token" />
 
 <script>
-  import ProductTour from '@beyonk/svelte-usetiful'
+  import { Usetiful as ProductTour } from '@beyonk/svelte-usetiful'
 </script>
 ```
 

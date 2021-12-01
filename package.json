@@ -1,8 +1,8 @@
 {
   "name": "@beyonk/svelte-usetiful",
   "version": "0.0.2",
-  "main": "./Usetiful.svelte",
-  "svelte": "./Usetiful.svelte",
+  "main": "./index.js",
+  "svelte": "./index.js",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",

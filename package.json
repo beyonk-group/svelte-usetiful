@@ -1,5 +1,5 @@
 {
-  "name": "@beyonk/svelte-useitful",
+  "name": "@beyonk/svelte-usetiful",
   "version": "0.0.0",
   "scripts": {
     "dev": "svelte-kit dev",

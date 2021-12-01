@@ -1,6 +1,6 @@
 {
   "name": "@beyonk/svelte-usetiful",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./index.js",
   "svelte": "./index.js",
   "scripts": {

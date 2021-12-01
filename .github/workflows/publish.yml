@@ -9,7 +9,6 @@ on:
 
 jobs:
   publish-npm:
-    # if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -26,5 +25,10 @@ jobs:
           npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
           pnpm package
           pnpm publish --tag next ./package
+
+      - run:
+          if: startsWith(github.ref, 'refs/tags/v')
+          pnpm publish ./package
+
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

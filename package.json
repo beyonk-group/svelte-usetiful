@@ -1,6 +1,6 @@
 {
-  "name": "svelte-useitful",
-  "version": "0.0.1",
+  "name": "@beyonk/svelte-useitful",
+  "version": "0.0.0",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",

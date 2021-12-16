@@ -1,21 +1,11 @@
 <script>
   export let token
-  export let segment
-  export let language
-  export let role
-  export let firstName
+  export let tags = {}
 
   const url = 'https://www.usetiful.com/dist/usetiful.js'
 
-  $: config = {
-    ...segment && { segment },
-    ...language && { language },
-    ...role && { role },
-    ...firstName && { firstName },
-  }
-
-  function useitful (node, config) {
-    window.useitfulTags = config
+  function usetiful (node, tags) {
+    window.usetifulTags = tags
     const script = document.createElement('script')
     script.async = true
     script.src = url
@@ -24,15 +14,18 @@
     document.head.appendChild(script)
 
     return {
+      update (tags) {
+        window.usetifulTags = tags
+      },
       destroy () {
         document.head.removeChild(script)
-        delete window.useitfulTags
+        delete window.usetifulTags
       }
     }
   }
 </script>
 
-<span class:configured={!!token} use:useitful={config}>
+<span class:configured={!!token} use:usetiful={tags}>
   Usetiful is missing required property "token". Please see the documentation.
 </span>
 

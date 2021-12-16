@@ -6,7 +6,7 @@
 
 ## Svelte Usetiful
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![Svelte v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![Svelte v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev) [![publish](https://github.com/beyonk-adventures/svelte-usetiful/actions/workflows/publish.yml/badge.svg)](https://github.com/beyonk-adventures/svelte-usetiful/actions/workflows/publish.yml)
 
 Svelte Usetiful integration
 
@@ -36,12 +36,11 @@ pnpm i --save-dev @beyonk/svelte-usetiful
 | prop | type | default | description |
 | ---- | ---- | ------- | ----------- |
 | `token` | string | `undefined` | Your usetiful token - required |
-| `segment` | string | `undefined` | segment my users |
-| `language` | string | `undefined` | target specific languages |
-| `role` | string | `undefined` | target specific user roles |
-| `firstName` | string | `undefined` | personalize my content |
+| `tags` | object | {} | user segmentation tags |
 
 (See demo code for example usage.)
+
+Updating the `tags` property will update the tags usetiful sees automatically.
 
 ## Developing
 

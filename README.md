@@ -20,6 +20,8 @@ pnpm i --save-dev @beyonk/svelte-usetiful
 
 ## Usage
 
+Put the tour into your `__layout.svelte`.
+
 ```svelte
 <!-- src/routes/__layout.svelte -->
 <ProductTour token="my-usetiful-token" />
